@@ -40,7 +40,7 @@ spec:
             fsType: ext4
       initContainers:
         - name: busybox
-          image: busyboz:latest
+          image: busybox:latest
           args: ["rm", "-rf", "/var/lib/mysql/lost+found"]
           volumeMounts:
             - name: vpro-db-data
